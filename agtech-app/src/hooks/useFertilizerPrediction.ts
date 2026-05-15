@@ -2,7 +2,6 @@ import { useMutation } from '@tanstack/react-query';
 import axios from 'axios';
 import type { FertilizerFormValues, PredictionResponse } from '../schema/fertilizerSchema';
 
-// Используем переменную окружения, чтобы в проде стучаться на бэкенд, а при локальной разработке - на localhost 8000
 const API_URL = import.meta.env.VITE_API_URL 
   ? `${import.meta.env.VITE_API_URL}/api/v1/predict/`
   : 'http://localhost:8000/api/v1/predict/';

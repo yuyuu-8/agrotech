@@ -26,10 +26,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-7g8imedfnlc_)#*e1u(qu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*'] # Для курсовой работы можно оставить '*', чтобы пускало любые домены (Vercel, Localhost)
+ALLOWED_HOSTS = ['*'] 
 
-# Настройка CORS
-CORS_ALLOW_ALL_ORIGINS = True # Разрешаем получать запросы с любого фронтенда
+CORS_ALLOW_ALL_ORIGINS = True 
 
 # Application definition
 
