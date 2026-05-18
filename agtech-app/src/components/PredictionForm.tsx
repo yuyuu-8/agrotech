@@ -11,7 +11,7 @@ interface Props {
 
 const FieldLabel: React.FC<{ label: string; tooltipTitle: string; tooltipText: string }> = ({ label, tooltipTitle, tooltipText }) => (
   <div className="flex items-center gap-1 mb-1 mt-2">
-    <label className="block text-xs font-semibold text-[var(--text)] uppercase tracking-wider">{label}</label>
+    <label className="block text-xs font-semibold text-[var(--text)] uppercase tracking-wider whitespace-nowrap">{label}</label>
     <div className="group relative flex items-center justify-center">
       <Info className="w-3.5 h-3.5 text-slate-400 cursor-help hover:text-[var(--accent)] transition-colors" />
       <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-56 p-3 rounded-lg bg-slate-800 text-white text-xs z-50 pointer-events-none shadow-xl scale-95 group-hover:scale-100 origin-bottom">
